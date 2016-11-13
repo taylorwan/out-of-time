@@ -1,0 +1,49 @@
+extends layout
+
+block content
+  nav
+    div.logo
+      a(href='/') Out of Time
+      img(src='../images/icon.png')
+    div.top-links
+      a#about(href='about') About
+      a#login(href='login') Login
+      a#signUp(href='signUp') Sign Up
+
+  div.content-wrap
+    h3 DeathBecomesHer
+
+    div.profile-left
+      div.profile-photo
+        img(src='/images/DeathBecomesHer.jpg')
+      div.details
+        div.info.age
+          span.label Age
+          span.content 53
+        div.info.gender
+          span.label Gender
+          span.content Genderqueer
+        div.info.orientation
+          span.label Orientation
+          span.content Pansexual
+        div.info.expiration
+          span.label ETD
+          span.content 6 mos - 1 yr
+      a.btn.btn-primary.message(href='/../message') Message
+
+    div.profile-right
+      div.profile-block
+        div.title Profile Summary
+        p Strong, assertive, genderqueer. Lover of all humanity...Taste the rainbow kind of lover. Let's live while we are dying and HAVE FUN! :)
+
+      div.profile-block
+        div.title Special Talent
+        p Passive-aggressive gracefully aging hippie who can tell you to #namastaythefuckaway and leave you begging for more
+
+      div.profile-block
+        div.title Looking For
+        p Breathing, compassionate. No cane needed, but desired!
+
+      div.profile-block
+        div.title Death Wish
+        p To swim with the sharks

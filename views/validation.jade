@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  nav
+    div.logo
+      a(href='/') Out of Time
+      img(src='images/icon-w.png')
+    div.top-links
+      a#about(href='about') About
+      a#login(href='login') Login
+      a#signUp(href='signUp') Sign Up
+
+  section.validate.content-wrap
+    h3 Upload your expiration validation
+    a.btn.btn-primary(href='#') Upload
+    div.skip
+      a(href='/browse') Skip for now*
+    p.small * you must upload proof of illness within 48 hours of signing up. You will be unable to send messages until you do so, and failure to do so will result in your account being deactivated.

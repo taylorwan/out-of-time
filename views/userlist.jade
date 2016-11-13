@@ -1,0 +1,37 @@
+extends layout
+
+block content
+  nav
+    div.logo
+      a(href='/') Out of Time
+      img(src='images/icon-w.png')
+    div.top-links
+      a#about(href='about') About
+      a#login(href='login') Login
+      a#signUp(href='signUp') Sign Up
+
+  div.content-wrap.browse
+    h1 Matches
+
+    div.banner
+      span Welcome to Out of Time!&nbsp;
+        a(href='https://docs.google.com/forms/d/1wOOqD_-Q4hVFXNWkpWQtWQrLb3ajU9t0CTbY-IcpKdc/') Click here
+        span &nbsp;to answer some questions about yourself.
+
+    form#filterMatches(name="filterMatches",method="post",action="/filterMatches")
+      span Browse by
+      select.form-control(name = "filterCriteria")
+        option(value="expirationDate") Expiration Date
+        option(value="distance") Distance
+
+    ul.matches
+      each user, i in userlist
+        li.match
+          a(href='user/#{user.username}')
+            div.img-holder
+              img(src='/images/#{user.username}.jpg')
+            div.username #{user.username}
+            div.buckets
+              span.expiration #{user.expiration} months left
+              span.age #{user.age} years old
+            div.distance #{user.distance} miles away
