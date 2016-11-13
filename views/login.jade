@@ -10,11 +10,9 @@ block content
       a#login(href='login') Login
       a#signUp(href='signUp') Sign Up
 
-  div.content-wrap.signup
+  div.content-wrap.login
     h3= title
-    form#formAddUser(name="adduser",method="post",action="/adduser")
+    form#formLogin(name="login")
       input.form-control#inputUserName(type="text", placeholder="Username", name="username")
-      input.form-control#inputUserEmail(type="text", placeholder="Email", name="useremail")
       input.form-control#inputPassword(type="password", placeholder="Password", name="password")
-      input.form-control#inputPasswordConfirm(type="password", placeholder="Confirm Password", name="password2")
-      button.btn.btn-primary#btnSubmit(type="submit") Create Account
+      button.btn.btn-primary#btnSubmit(type="submit") Login

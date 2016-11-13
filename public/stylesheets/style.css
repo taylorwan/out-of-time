@@ -134,15 +134,23 @@ ul.matches {
 }
 
 .match {
-  width: 23%;
-  margin: 1em 1%;
+  width: 24%;
+  margin: 1em 0.5%;
   display: inline-block;
   text-align: center;
+  padding: 1.1em;
+  border: 2px solid rgba(0,0,0,0);
+  border: 2px solid #eee;
+}
+
+.match:hover {
+  border: 2px solid #ccc;
 }
 
 .match a,
-.match a:hover {
+.match:hover a {
   color: #222;
+  text-decoration: none;
 }
 
 .match .img-holder {
@@ -153,6 +161,7 @@ ul.matches {
 
 div.username {
   font-weight: 600;
+  color: #00AD93;
 }
 
 .buckets span {
@@ -164,6 +173,9 @@ div.username {
   float: left;
   margin-right: 2em;
   margin-bottom: 2em;
+  background-color: white;
+  border: 2px solid #eee;
+  padding: 1em;
 }
 
 .profile-photo {
@@ -185,6 +197,7 @@ div.username {
 
 .profile-block .title {
   font-weight: 600;
+  color: #00AD93;
 }
 
 .profile-left .btn {
@@ -219,4 +232,80 @@ footer {
 /* validation */
 .validate .skip {
   margin: 2em 0 1em;
+}
+
+/* end/messaging page */
+.disappears {
+    z-index: 20;
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: #fff;
+    animation: fadeOut 4.5s linear;
+    -webkit-animation: fadeOut 4.5s linear;
+    -moz-animation: fadeOut 4.5s linear;
+    -ms-animation: fadeOut 4.5s linear;
+    -o-animation: fadeOut 4.5s linear;
+}
+
+@keyframes fadeOut {
+  0%    { opacity:1; }
+  90%   { opacity:1; }
+  100%  { opacity:0; }
+}
+
+@-webkit-keyframes fadeOut {
+  0%    { opacity:1; }
+  90%   { opacity:1; }
+  100%  { opacity:0; }
+}
+
+@-moz-keyframes fadeOut {
+  0%    { opacity:1; }
+  90%   { opacity:1; }
+  100%  { opacity:0; }
+}
+
+@-ms-keyframes fadeOut {
+  0%    { opacity:1; }
+  90%   { opacity:1; }
+  100%  { opacity:0; }
+}
+
+@-o-keyframes fadeOut {
+  0%    { opacity:1; }
+  90%   { opacity:1; }
+  100%  { opacity:0; }
+}
+
+.content-wrap.signup {
+  width: 500px;
+  max-width: 100%;
+}
+
+.content-wrap.signup .form-control {
+  margin: 0.5em 0;
+}
+
+/* preferences */
+
+#preferences label {
+  display: block;
+  margin-left: 3px;
+}
+
+.radio {
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+
+.radio .subtitle {
+  color: #00AD93;
+  margin-bottom: 0.4em;
 }

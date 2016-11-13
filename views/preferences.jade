@@ -1,0 +1,229 @@
+extends layout
+
+block content
+  nav
+    div.logo
+      a(href='/') Out of Time
+      img(src='images/icon-w.png')
+    div.top-links
+      a#about(href='about') About
+      a#login(href='login') Login
+      a#signUp(href='signUp') Sign Up
+
+  section.preferences.container
+    form#preferences(name="questionaire").row
+      section.you.col-md-6
+        h4 About You
+        div.radio.seekingYou
+          h5.subtitle Seeking
+          label
+            input(type='radio', name='seekingYou', id='seekingYouOption3', value='marriage')
+            span Marriage
+          label
+            input(type='radio', name='seekingYou', id='seekingYouOption4', value='funeral')
+            span Funeral Coverage
+          label
+            input(type='radio', name='seekingYou', id='seekingYouOption5', value='benefits')
+            span Friends with Benefits (No wires or panties attached)
+
+        div.radio.burialYou
+          h5.subtitle Burial Preferences
+          label
+            input(type='radio', name='burialYou', id='burialYouOption1', value='cremation')
+            span Cremation
+          label
+            input(type='radio', name='burialYou', id='burialYouOption2', value='coffin')
+            span In the dirt/Coffin
+          label
+            input(type='radio', name='burialYou', id='burialYouOption3', value='double')
+            span Double Casket - When I go, you go.
+          label
+            input(type='radio', name='burialYou', id='burialYouOption4', value='other')
+            span Other (i.e. ashes helps plant a tree)
+
+        div.radio.sexYou
+          h5.subtitle Sex
+          label
+            input(type='radio', name='sexYou', id='sexYouOption1', value='assistance')
+            span Manual, Medicinal or Medical Assistance Necessary
+          label
+            input(type='radio', name='sexYou', id='sexYouOption3', value='dying')
+            span GET IT UP FUCKER! I'm DYING!
+          label
+            input(type='radio', name='sexYou', id='sexYouOption4', value='gotThis')
+            span I got this. Pants off! Dance Off!
+          label
+            input(type='radio', name='sexYou', id='sexYouOption5', value='other')
+            span Other... Let's discuss
+
+        div.radio.ageYou
+          h5.subtitle Age
+          label
+            input(type='radio', name='ageYou', id='ageYouOption1', value='young')
+            span Young and dying
+          label
+            input(type='radio', name='ageYou', id='ageYouOption2', value='seasoned')
+            span Seasoned and dying
+          label
+            input(type='radio', name='ageYou', id='ageYouOption3', value='ripe')
+            span Ripe and ready for the taking
+          label
+            input(type='radio', name='ageYou', id='ageYouOption4', value='other')
+            span Other
+
+        div.radio.respiratoryYou
+          h5.subtitle Respiratory
+          label
+            input(type='radio', name='respiratoryYou', id='respiratoryYouOption1', value='mechanical')
+            span Mechanically Assisted
+          label
+            input(type='radio', name='respiratoryYou', id='respiratoryYouOption2', value='organic')
+            span Organically Assisted (someone gave me their heart)
+          label
+            input(type='radio', name='respiratoryYou', id='respiratoryYouOption3', value='cigarette')
+            span Cigarette Assisted
+          label
+            input(type='radio', name='respiratoryYou', id='respiratoryYouOption5', value='other')
+            span Other
+
+        div.radio.expirationYou
+          h5.subtitle ETD (Estimated Time of Death)
+          label
+            input(type='radio', name='expirationYou', id='expirationYouOption1', value='mechanical')
+            span Three months or less
+          label
+            input(type='radio', name='expirationYou', id='expirationYouOption2', value='organic')
+            span Six months or less
+          label
+            input(type='radio', name='expirationYou', id='expirationYouOption3', value='cigarette', checked='true')
+            span One year or less
+          label
+            input(type='radio', name='expirationYou', id='expirationYouOption4', value='vanilla')
+            span Not gonna die in a year... I have time to wait
+          label
+            input(type='radio', name='expirationYou', id='expirationYouOption5', value='other')
+            span Other
+
+        div.radio.endOfLifeYou
+          h5.subtitle End of Life Decisions
+          label
+            input(type='radio', name='endOfLifeYou', id='endOfLifeYouOption1', value='assist')
+            span WILL ASSIST (PICK YOUR POISON!)
+          label
+            input(type='radio', name='endOfLifeYou', id='endOfLifeYouOption2', value='dnr')
+            span DNR (DO NOT RESUSCITATE)
+          label
+            input(type='radio', name='endOfLifeYou', id='endOfLifeYouOption3', value='paddles')
+            span CHARGE UP THE PADDLES! (MOMMA DIDN'T RAISE A QUITTER!)
+          label
+            input(type='radio', name='endOfLifeYou', id='endOfLifeYouOption5', value='other')
+            span Other
+
+      section.them.col-md-6
+        h4 About Them
+        div.radio.seekingThem
+          h5.subtitle Seeking
+          label
+            input(type='radio', name='seekingThem', id='seekingThemOption3', value='marriage')
+            span Marriage
+          label
+            input(type='radio', name='seekingThem', id='seekingThemOption4', value='funeral')
+            span Funeral Coverage
+          label
+            input(type='radio', name='seekingThem', id='seekingThemOption5', value='benefits')
+            span Friends with Benefits (No wires or panties attached)
+
+        div.radio.burialThem
+          h5.subtitle Burial Preferences
+          label
+            input(type='radio', name='burialThem', id='burialThemOption1', value='cremation')
+            span Cremation
+          label
+            input(type='radio', name='burialThem', id='burialThemOption2', value='coffin')
+            span In the dirt/Coffin
+          label
+            input(type='radio', name='burialThem', id='burialThemOption3', value='double')
+            span Double Casket - When I go, Them go.
+          label
+            input(type='radio', name='burialThem', id='burialThemOption4', value='other')
+            span Other (i.e. ashes helps plant a tree)
+
+        div.radio.sexThem
+          h5.subtitle Sex
+          label
+            input(type='radio', name='sexThem', id='sexThemOption1', value='assistance')
+            span Manual, Medicinal or Medical Assistance Necessary
+          label
+            input(type='radio', name='sexThem', id='sexThemOption3', value='dying')
+            span GET IT UP FUCKER! I'm DYING!
+          label
+            input(type='radio', name='sexThem', id='sexThemOption4', value='gotThis')
+            span I got this. Pants off! Dance Off!
+          label
+            input(type='radio', name='sexThem', id='sexThemOption5', value='other')
+            span Other... Let's discuss
+
+        div.radio.ageThem
+          h5.subtitle Age
+          label
+            input(type='radio', name='ageThem', id='ageThemOption1', value='Themng')
+            span Themng and dying
+          label
+            input(type='radio', name='ageThem', id='ageThemOption2', value='seasoned')
+            span Seasoned and dying
+          label
+            input(type='radio', name='ageThem', id='ageThemOption3', value='ripe')
+            span Ripe and ready for the taking
+          label
+            input(type='radio', name='ageThem', id='ageThemOption4', value='other')
+            span Other
+
+        div.radio.respiratoryThem
+          h5.subtitle Respiratory
+          label
+            input(type='radio', name='respiratoryThem', id='respiratoryThemOption1', value='mechanical')
+            span Mechanically Assisted
+          label
+            input(type='radio', name='respiratoryThem', id='respiratoryThemOption2', value='organic')
+            span Organically Assisted (someone gave me their heart)
+          label
+            input(type='radio', name='respiratoryThem', id='respiratoryThemOption3', value='cigarette')
+            span Cigarette Assisted
+          label
+            input(type='radio', name='respiratoryThem', id='respiratoryThemOption5', value='other')
+            span Other
+
+        div.radio.expirationThem
+          h5.subtitle ETD (Estimated Time of Death)
+          label
+            input(type='radio', name='expirationThem', id='expirationThemOption1', value='mechanical')
+            span Three months or less
+          label
+            input(type='radio', name='expirationThem', id='expirationThemOption2', value='organic')
+            span Six months or less
+          label
+            input(type='radio', name='expirationThem', id='expirationThemOption3', value='cigarette')
+            span One year or less
+          label
+            input(type='radio', name='expirationThem', id='expirationThemOption4', value='vanilla')
+            span Not gonna die in a year... I have time to wait
+          label
+            input(type='radio', name='expirationThem', id='expirationThemOption5', value='other')
+            span Other
+
+        div.radio.endOfLifeThem
+          h5.subtitle End of Life Decisions
+          label
+            input(type='radio', name='endOfLifeThem', id='endOfLifeThemOption1', value='assist')
+            span WILL ASSIST (PICK ThemR POISON!)
+          label
+            input(type='radio', name='endOfLifeThem', id='endOfLifeThemOption2', value='dnr')
+            span DNR (DO NOT RESUSCITATE)
+          label
+            input(type='radio', name='endOfLifeThem', id='endOfLifeThemOption3', value='paddles')
+            span CHARGE UP THE PADDLES! (MOMMA DIDN'T RAISE A QUITTER!)
+          label
+            input(type='radio', name='endOfLifeThem', id='endOfLifeThemOption5', value='other')
+            span Other
+
+      a.btn.btn-primary#btnSubmit(href='browse') Submit
