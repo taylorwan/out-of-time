@@ -284,12 +284,16 @@ footer {
   100%  { opacity:0; }
 }
 
-.content-wrap.signup {
+/* signup + login */
+
+.content-wrap.signup,
+.content-wrap.login {
   width: 500px;
   max-width: 100%;
 }
 
-.content-wrap.signup .form-control {
+.content-wrap.signup .form-control,
+.content-wrap.login .form-control {
   margin: 0.5em 0;
 }
 
